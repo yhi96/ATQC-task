@@ -13,8 +13,6 @@ The API returns a 200 OK status.
 The response body is a JSON list containing the devices in the inventory.
 The response body is not empty.
 
-Notes: Make sure the inventory is populated before testing.
-
 ### Test Case 2:
 Test Case ID: TC_INV_002
 Title: Verify adding a new device to the inventory (positive scenario)
@@ -35,8 +33,6 @@ Expected Result:
 The API returns a 201 Created status.
 The device data is correctly returned in the response body.
 
-Notes: Ensure that the device ID 123456 does not already exist in the inventory.
-
 ### Test Case 3:
 Test Case ID: TC_INV_003
 Title: Verify adding a device with missing required fields (negative scenario)
@@ -55,8 +51,6 @@ Verify that the error message indicates that the "id" field is required.
 Expected Result:
 The API returns a 400 Bad Request status.
 The error message should indicate the missing "id" field.
-
-Notes: This test checks for input validation.
 
 ### Test Case 4:
 Test Case ID: TC_INV_004
@@ -78,8 +72,6 @@ Expected Result:
 The API returns a 200 OK status.
 The device information is correctly updated in the response body.
 
-Notes: Make sure the device ID 123456 exists in the inventory before testing.
-
 ### Test Case 5:
 Test Case ID: TC_INV_005
 Title: Verify getting the device details by ID (positive scenario)
@@ -92,5 +84,3 @@ Check that the response body contains the details for the device with ID '123456
 Expected Result:
 The API returns a 200 OK status.
 The response body contains the correct details for the device with ID '123456'.
-
-Notes: Ensure that the device with ID 123456 exists in the inventory.
