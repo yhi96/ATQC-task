@@ -93,4 +93,4 @@ Expected Result:
 The API returns a 200 OK status.
 The response body contains the correct details for the device with ID '123456'.
 
-Notes: Ensure that the device with ID TEST123 exists in the inventory.
+Notes: Ensure that the device with ID 123456 exists in the inventory.
